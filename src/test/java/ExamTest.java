@@ -5,15 +5,14 @@ public class ExamTest {
     @org.junit.Test
 
         public void myMethod(){
-            int result = 88;
-            if (result > 78) {
-                Exam myExam1 = new Exam();
-                myExam1.setName("Android");
-            }
-            else {
-                Exam myExam2 = new Exam();
-                myExam2.setName("MySQL");
-            }
+        Exam myExam =  new Exam("PHP");
+        myExam = null;
+        myExam = new Exam("SQL");
+        myExam = new Exam("JAVA");
+
+        Exam yourExam = new Exam("PMP");
+                yourExam =  myExam;
+            
         }
 
 
